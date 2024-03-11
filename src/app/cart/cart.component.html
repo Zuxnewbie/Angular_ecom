@@ -1,0 +1,43 @@
+
+<div class="container">
+  <div class="row mt-3 pl-3 pr-3">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Name</th>
+          <th>Price</th>
+          <th>Description</th>
+          <th>Details</th>
+          <th>Action</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of cartItems">
+          <td scope="row">
+            <img
+              width="50px"
+              [src]="'assets/img/product/' + item.img"
+              alt="{{ item.name }}"
+            />
+          </td>
+          <td>{{ item.name }}</td>
+          <td>{{ item.price | currency }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.details }}</td>
+          <td>
+            <button class="btn btn-primary" (click)="editItem(item)">
+              <span class="badge badge-primary">Edit</span>
+            </button>
+          </td>
+          <td>
+            <button class="btn btn-primary" (click)="deleteItem(item)">
+              <span class="badge badge-danger">Delete</span>
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

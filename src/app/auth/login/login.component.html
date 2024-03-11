@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+      <div class="card">
+        <div class="card-body">
+          <h3 class="card-title text-center">Login</h3>
+          <form (ngSubmit)="submit()" #myForm="ngForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                [(ngModel)]="form.email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Email Address"
+                #email="ngModel"
+                required
+              />
+              <small
+                *ngIf="email.invalid && (email.touched || email.dirty)"
+                class="text-danger"
+                >Email must be valid</small
+              >
+            </div>
+            <div class="mb-3">
+              <label for="pass" class="form-label">Password</label>
+              <input
+                type="password"
+                [(ngModel)]="form.password"
+                minlength="8"
+                name="pass"
+                id="pass"
+                autoComplete="on"
+                class="form-control"
+                placeholder="Password"
+                #pass="ngModel"
+                required
+              />
+              <small
+                *ngIf="pass.invalid && (pass.touched || pass.dirty)"
+                class="text-danger"
+              >
+                <small *ngIf="pass.errors?.['required']"
+                  >Password must be valid</small
+                >
+                <small *ngIf="pass.errors?.['minlength']"
+                  >Password must be at least 8 characters long.</small
+                >
+              </small>
+            </div>
+            <button
+              type="submit"
+              [disabled]="myForm.form.invalid"
+              class="btn btn-primary"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

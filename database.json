@@ -1,0 +1,64 @@
+{
+    "products": [
+        {
+            "name": "Product 1",
+            "img": "pro-1.webp",
+            "price": 130000,
+            "imgHover": "pro-1-1.webp",
+            "discount": 0.1,
+            "addCart": false,
+            "view": false,
+            "imgDetail": "pro-1.webp",
+            "nameDetail": "Product_1",
+            "description": "This is a lot of description.",
+            "details": "This is a details Product",
+            "inStock": 10,
+            "onSale": false
+        },
+        {
+            "name": "Product 2",
+            "img": "pro-2.webp",
+            "price": 120000,
+            "imgHover": "pro-2-1.webp",
+            "discount": 0,
+            "addCart": false,
+            "view": false,
+            "imgDetail": "pro-2.webp",
+            "nameDetail": "Product_2",
+            "description": "This is a lot of description.",
+            "details": "This is a details Product",
+            "inStock": 10,
+            "onSale": false
+        },
+        {
+            "name": "Product 3",
+            "img": "pro-3.webp",
+            "price": 150000,
+            "imgHover": "pro-3-1.webp",
+            "discount": 0,
+            "addCart": false,
+            "view": false,
+            "imgDetail": "pro-3.webp",
+            "nameDetail": "Product_3",
+            "description": "This is a lot of description.",
+            "details": "This is a details Product",
+            "inStock": 10,
+            "onSale": false
+        },
+        {
+            "name": "Product 4",
+            "img": "pro-4.webp",
+            "price": 160000,
+            "imgHover": "pro-4-1.webp",
+            "discount": 0.1,
+            "addCart": false,
+            "view": false,
+            "imgDetail": "pro-4.webp",
+            "nameDetail": "Product_4",
+            "description": "This is a lot of description.",
+            "details": "This is a details Product",
+            "inStock": 10,
+            "onSale": false
+        }
+    ]
+}
